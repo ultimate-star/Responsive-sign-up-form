@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  background-repeat: repeat;
+  background-position: center top;
+}
+
+main {
+  margin-top: 121px;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.flex-container {
+  display: flex;
+}
+
+#wrapper {
+  max-width: 1110px;
+  margin: auto;
+}
+
+.left-col{
+    color: #ffffff;
+}
+
+.right-col {
+  margin-left: 30px;
+}
+
+.content-container {
+  margin-top: 182px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 52px;
+  font-weight: 600;
+}
+
+input[type=text], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 16px 31px;
+    border: 1px solid #ccc;
+    
+    border-radius: 4px;
+    resize: vertical;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+input[type=submit] {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px hsl(154, 57%, 47%);
+}
+
+input[type=submit]:hover {
+  background-color: hsl(154, 59%, 51%, 0.8);
+  
+}
+
+input[type=submit]:focus {
+  color: white;
+  border: none;
+  
+}
+
+input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+  color: hsl(249, 10%, 26%);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-75 {
+  width: 100%;
+  
+  margin-bottom: 15px;
+}
+
+.error-icon {
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 97% 49%;
+  border: 2px solid hsl(0, 100%, 74%) !important;
+}
+.col-6 {
+  width: 50%;
+}
+.free7days {
+  width: 100%;
+  padding: 19px 20px;
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  border-radius: 11px;
+  margin-bottom: 23px;
+  text-align: center;
+  box-shadow: 0px 7px rgba(0,0,0,0.15);
+}
+
+.free7days p {
+  padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.try {
+  font-weight: 600;
+}
+
+form {
+  background-color: #fff;
+  padding: 40px 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px rgba(0,0,0,0.15);
+
+}
+
+form div {
+  margin-bottom: 6px;
+}
+
+.error {
+  color: hsl(0, 100%, 74%);
+  margin-left: 5px;
+  float: right;
+  font-style: italic;
+  font-size: 12px;
+  margin: 7px 0 12px;
+}
+
+.error-icon {
+
+  background-image: url(../images/icon-error.svg);
+}
+
+.terms-services {
+  font-size: 11px;
+  text-align: center;
+  padding: 12px 0 16px;
+  color: hsl(246, 25%, 77%);
+}
+
+.terms-services-style {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  font-family: inherit;
+}
+
+footer {
+  margin-top: 78px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  body {
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+
+  main {
+    margin: 90px 23px 0;
+}
+
+  .flex-container {
+    display: block;
+  }
+
+  /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+.left-col{
+  color: #ffffff;
+}
+
+.right-col {
+margin-left: 0;
+}
+
+.content-container {
+  margin-top: 0px;
+    text-align: center;
+    margin-bottom: 80px
+}
+h1 {
+  font-size: 28px;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+form {
+  padding: 25px 25px 1px;
+}
+
+input[type=text], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 16px 17px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

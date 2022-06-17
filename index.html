@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="js/email_val.js"></script>
+
+  <title>Responsive sign up form</title>
+</head>
+
+<body>
+  <main>
+    <div id="wrapper">
+      <div class="flex-container">
+        <div class="left-col col-6">
+          <div class="content-container">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+              but understanding how developers think is invaluable. </p>
+          </div>
+        </div>
+        <div class="right-col col-6">
+          <div class="free7days">
+            <p><span class="try">Try it free 7 days</span> then $20/mo. thereafter</p>
+          </div>
+          <form id="form" method="post" action="/" novalidate>
+            <div class="row">
+
+              <div class="col-75">
+                <input type="text" id="firstname" title="First Name" name="firstname" placeholder="First Name">
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col-75">
+                <input type="text" id="lastname" title="Last Name" name="lastname" placeholder="Last Name">
+
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col-75">
+                <input type="email" id="email" title="Email Address" name="email" placeholder="Email Address">
+
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col-75">
+                <input type="password" id="password" title="Password" name="password" placeholder="Password">
+
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" id="submit" value="Claim Your Free Trial" />
+
+            </div>
+            <div class="terms-services">By clicking the button, you are agreeing to our <span
+                class="terms-services-style">Terms and Services</span></div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
